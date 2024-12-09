@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://raw.githubusercontent.com/devression/Login-Form/d9d0af5f2243b64fa62a6c3ad7e9161179a22bb1/background-image.jpeg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    background: none;
+    padding: 15px 0;
+}
+
+nav ol {
+    list-style-type: none;
+    text-align: end;
+}
+
+nav ol li {
+    display: inline;
+    margin: 42px;
+    font-size: 18px;
+    color: #8211a5;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+nav ol li:hover {
+    color: #1a0a75;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+    border: 1px white;
+
+}
+
+.login-form-box {
+
+    padding: 30px 40px;
+    border-radius: 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 700px;
+    text-align: center;
+    transition: transform 0.3s;
+    backdrop-filter: blur(10px);
+    border: 1px white;
+
+
+}
+
+.login-form-box:hover {
+    transform: scale(1.02);
+}
+
+.login-title {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px white;
+
+}
+
+.login-input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+    margin: 20px;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+    color: #333;
+    font-weight: bold;
+    transition: border-color 0.3s ease, font-weight 0.3s ease, color 0.3s ease;
+}
+
+.login-username {
+    transition: 0.3s ease;
+}
+
+.login-username:hover {
+    transform: scale(1.01);
+}
+
+.login-password {
+    transition: 0.3s ease;
+}
+
+.login-password:hover {
+    transform: scale(1.01);
+}
+
+.login-input::placeholder {
+    font-weight: bold;
+    color: #666;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-input:hover::placeholder {
+    color: #aaa;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-input:focus {
+    border-bottom: 2px solid #8c1fbe67;
+    font-weight: normal;
+    color: #000;
+}
+
+.login-input:focus::placeholder {
+    color: transparent;
+}
+
+.login-button {
+    width: 20%;
+    padding: 10px;
+    background-color: #ffffff44;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+
+}
+
+.login-button:hover {
+    background-color: #b11ece88;
+    transform: scale(1.05);
+}
+
+.login-button {
+    transition: 0.3s;
+}
+
+.login-extra-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-link {
+    color: #4A90E2;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
