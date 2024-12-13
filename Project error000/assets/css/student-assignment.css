@@ -1,0 +1,288 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    background-image: url(https://raw.githubusercontent.com/devression/Login-Form/d9d0af5f2243b64fa62a6c3ad7e9161179a22bb1/background-image.jpeg);
+    color: #333;
+    background-size: cover;
+    margin: 0vh;
+    padding: 0vh;
+}
+
+.nav{
+    width: 100%;
+    margin: 0px 0px 0px 00px;
+    padding: 0px 0px 0px 150px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.profile{
+   padding: 0px 0px 0px 150px;
+}
+
+.navbar{
+    display: flex inline;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    flex-wrap: wrap;  
+    
+}
+
+ol{
+    padding: 7px;
+}
+li{
+    
+    list-style: none;
+    display: inline-flex;
+    padding: 0px 35px;
+    font-weight:bold;
+    transition: color 0.3s;
+}
+li:hover{
+    color: #ffffff;
+}
+
+header{
+    background-color: rgba(255, 255, 255, 0.74); 
+    text-align: center;
+    display: inline;
+}
+
+
+/* Main Content */
+.assignment-page-content {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Assignment Submission Section */
+/* Updated Assignment Submission Section */
+.assignment-submission {
+    background-color: #1E1E1E;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    margin-bottom: 30px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.asform{
+    display: flex;
+    flex-direction: column
+}
+.assignment-submission h1 {
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.assignment-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    border: 2px dashed rgba(255, 255, 255, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.assignment-box:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.assignment-box label {
+    font-size: 16px;
+    color: #B0B0B0;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.assignment-box2 input[type="file"] {
+    display: none;
+}
+
+.assignment-box2:after {
+    content: "Drag and drop files here or click to upload";
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.assignment-submission textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    resize: vertical;
+    background-color: #2E2E2E;
+    color: #FFFFFF;
+}
+
+.assignment-submission .submit-btn {
+    background-color: #4A90E2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.assignment-submission .submit-btn:hover {
+    background-color: #357ABD;
+}
+
+
+/* Due Assignments Section */
+.due-assignments {
+    margin-bottom: 30px;
+}
+
+.due-assignments h2 {
+    font-size: 24px;
+    color: #4A90E2;
+    margin-bottom: 20px;
+}
+
+.due-assignments table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.due-assignments th, .due-assignments td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.due-assignments th {
+    background-color: #f2f2f2;
+}
+
+.due-assignments td a {
+    color: #4A90E2;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.due-assignments td a:hover {
+    background-color: #357ABD;
+    color: white;
+}
+
+/* Completed Assignments Section */
+.completed-assignments {
+    margin-bottom: 30px;
+}
+
+.completed-assignments h2 {
+    font-size: 24px;
+    color: #4A90E2;
+    margin-bottom: 20px;
+}
+
+.completed-assignments table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.completed-assignments th, .completed-assignments td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.completed-assignments th {
+    background-color: #f2f2f2;
+}
+
+.completed-assignments td a {
+    color: #4A90E2;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.completed-assignments td a:hover {
+    background-color: #357ABD;
+    color: white;
+}
+
+/* Solution Section */
+.solution-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.solution-section h2 {
+    font-size: 24px;
+    color: #4A90E2;
+    margin-bottom: 20px;
+}
+
+.solution-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.solution-section th, .solution-section td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.solution-section th {
+    background-color: #f2f2f2;
+}
+
+.solution-section td a {
+    color: #4A90E2;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.solution-section td a:hover {
+    background-color: #357ABD;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #ac72d8;
+    color: #fff;
+}
+
+footer p {
+    font-size: 14px;
+}

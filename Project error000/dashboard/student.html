@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/student-dashboard.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <span class="navbar">
+                <ol>
+                    <li>Student Dashboard</li>
+                    <li>Assignment</li>
+                    <li>Books</li>
+                    <li>Chat</li>
+                    <li>Syllabus</li>
+                </ol>
+            </span>
+            <span class="profile">
+                <a href=""><span class="profile-icon"><i class="fa-solid fa-user"></i></span></a>
+            </span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="firstbox">
+            <div class="main-firstbox">
+                <div class="firstbox-syllabadge">
+                    <div class="firstbox-syllabadge-syllabus">
+                        <p>Syllabus-completion</p>
+                        <div class="percent">
+                            <p>50%</p>
+                        </div>
+                    </div>
+                    <div class="firstbox-syllabadge-badge">
+                        <p>Badge</p>
+                        <div class="badge">
+                            <p>GOLD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="firstbox-dayLeft">
+                    <p>Days Left</p>
+                    <div class="days">
+                        <p>100</p>
+                    </div   >
+                </div>
+            </div>
+        </section>
+
+        <section class="Assignment-Area">
+            <div class="assignments-section">
+                <table>
+                    <div class="assigment-title">
+                        <thead>
+                            <h2>Assignment</h2>
+                            <tr>
+                                <th>Chapter</th>
+                                <th>Status</th>
+                                <th>Grades</th>
+                            </tr>
+                        </thead>
+                    </div>
+                    <tbody>
+                        <tr>
+                            <td>Chapter 5</td>
+                            <td>Due</td>
+                            <td>Due</td>
+                        </tr>
+                        <tr>
+                            <td>Chapter 4</td>
+                            <td>Due</td>
+                            <td>Due</td>
+                        </tr>
+                        <tr>
+                            <td>Chapter 3</td>
+                            <td>Completed</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>Chapter 2</td>
+                            <td>Completed</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>Chapter 1</td>
+                            <td>Completed</td>
+                            <td>C</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#" class="view-all-btn">View All Assignments</a>
+            </div>
+        </section>
+
+        <section class="Syllabus Area">
+            <div class="syllabus-completion-section">
+                <h2>Syllabus Completion</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Chapter</th>
+                            <th>Preparation Quality</th>
+                            <th>Revision Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Trigonometry</td>
+                            <td>Good</td>
+                            <td>Revised</td>
+                        </tr>
+                        <tr>
+                            <td>Newton's Laws</td>
+                            <td>Excellent</td>
+                            <td>Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="Summary and Request Area">
+            <div class="summary-section">
+                <span class="summary-content">
+                    <h2>Summary</h2>
+                    <p><strong>Chapters Completed:</strong> 5</p>
+                    <p><strong>Preparation Quality:</strong> Average</p>
+                    <p><strong>Midas Points:</strong> 350</p>
+                </span>
+                <aside class="request-section">
+                    <h2>Request Section</h2>
+                    <form action="#" method="POST">
+                        <textarea name="request" rows="4"
+                            placeholder="Request an updated summary or any assistance"></textarea>
+                        <button type="submit">Submit Request</button>
+                    </form>
+                </aside>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Error000. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
