@@ -1,0 +1,339 @@
+/* Reset default margins, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and background styles */
+body {
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    background-image: url(https://raw.githubusercontent.com/devression/Login-Form/d9d0af5f2243b64fa62a6c3ad7e9161179a22bb1/background-image.jpeg);
+    color: #333;
+    background-size: cover;
+    margin: 0vh;
+    padding: 0vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav{
+    width: 100%;
+    margin: 0px 0px 0px 00px;
+    padding: 0px 0px 0px 150px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.profile{
+   padding: 0px 0px 0px 150px;
+}
+
+.navbar{
+    display: flex inline;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    flex-wrap: wrap;  
+    
+}
+a{
+    text-decoration: none;
+}
+
+ol{
+    padding: 7px;
+}
+li{
+    
+    list-style: none;
+    display: inline-flex;
+    padding: 0px 35px;
+    font-weight:bold;
+    transition: color 0.3s;
+}
+li:hover{
+    color: #ffffff;
+}
+
+header{
+    background-color: rgba(255, 255, 255, 0.74); 
+    text-align: center;
+    display: inline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin: 50px auto 20px;
+    max-width: 1200px;
+    padding: 0 20px;
+    position: relative;
+}
+
+
+.firstbox {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 8px;
+}
+
+section.main-box {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Individual calendar boxes for Syllabus Completion, Badge Update, and Days Left */
+.calendar-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.calendar-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.calendar-box p:first-child {
+    font-size: 16px;
+    font-weight: bold;
+    color: #357ABD;
+}
+
+.calendar-box p:last-child {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4A90E2;
+    margin-top: 10px;
+}
+
+/* Syllabus Completion box */
+.syllabus-completion .calendar-box {
+    padding-left: 20px;
+    background-color: #F0F8FF;
+    width: 30vh;
+}
+
+/* Badge Update box */
+.badge-update .calendar-box {
+    padding: 35px;
+    background-color: #FFD700;
+    width: 30vh;
+}
+
+/* Days Left box */
+.days-left .calendar-box {
+    padding: 35px;
+    background-color: #90EE90;
+    width: 30vh;
+}
+
+/* Assignment Section */
+.Assignment-Area{
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: left
+}
+
+
+.assignments-section h2 {
+    font-size: 22px;
+    color: #4A90E2;
+    margin-bottom: 20px;
+}
+
+.assignments-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.assignments-section th{
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.assignments-section td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+
+.view-all-btn {
+    display: block;
+    margin: 20px 400px auto;
+    padding: 10px 20px;
+    background: #4A90E2;
+    color: white;
+    border: none;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.view-all-btn:hover {
+    background: #357ABD;
+}
+
+/* syllabus  */
+.syllabus-completion-section {
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 30px;
+    
+}
+.summary-section-text{
+    display: flex;
+    
+}
+
+.syllabus-completion-section h2 {
+    font-size: 22px;
+    color: #4A90E2;
+    margin-bottom: 20px;
+}
+
+.syllabus-completion-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.syllabus-completion-section th,
+.syllabus-completion-section td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.syllabus-completion-section th {
+    background-color: #f2f2f2;
+}
+
+.syllabus-completion-section td {
+    background-color: #fafafa;
+}
+
+.summary-section {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background: #fff;
+    gap: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 50px;
+    /* height: 35vh; */
+    padding-bottom: 10px;
+}
+
+.summary-section h2 {
+    font-size: 22px;
+    color: #4A90E2;
+    margin-bottom: 20px;
+}
+
+.summary-content {
+    margin-bottom: 20px;
+}
+
+.summary-content p {
+    font-size: 20px;
+    color: #202020;
+    
+}
+
+.summary-content strong {
+    color: #000000;
+}
+
+/* Request Section */
+.request-section {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.request-section h2 {
+    font-size: 22px;
+    color: #4A90E2;
+    margin-bottom: 10px;
+}
+
+.request-section textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    resize: vertical;
+}
+
+.request-section button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.request-section button:hover {
+    background: #357ABD;
+}
+
+/* Footer */
+footer {
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #ac72d8;
+    color: #fff;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-firstbox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .firstbox-syllabadge,
+    .firstbox-dayLeft {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .assignments-section,
+    .syllabus-completion-section,
+    .summary-section,
+    .request-section {
+        padding: 15px;
+    }
+
+    .assignments-section table,
+    .syllabus-completion-section table {
+        font-size: 14px;
+    }
+}

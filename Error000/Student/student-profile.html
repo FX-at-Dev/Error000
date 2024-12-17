@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="/assets/css/student-profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Left Navigation -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="/Student/student-dashboard.html">Student Dashboard</a></li>
+                <li><a href="/Student/student-assignment.html">Assignment</a></li>
+                <li><a href="/Student/student-book.html">Books</a></li>
+                <li><a href="/Student/Chat.html">Chat</a></li>
+                <li><a href="/Student/student-syllabus.html">Syllabus</a></li>
+            </ul>
+        </nav>
+
+        <!-- Profile Section -->
+        <main class="profile-section">
+            <!-- Profile Photo and Badge -->
+            <div class="profile-header">
+                <div class="profile-photo">
+                    <img src="/assets/images/pfp.jpg" alt="Profile Photo">
+                    <button class="edit-photo-btn">Change Photo</button>
+                </div>
+                <div class="profile-info">
+                    <h2>Student Name</h2>
+                    <p>Current Badge: <span class="badge">Gold</span></p>
+                </div>
+            </div>
+
+            <!-- Editable Details -->
+            <section class="details-section">
+                <h3>Basic Details</h3>
+                <div class="details">
+                    <label>Name:</label>
+                    <input type="text" value="John Doe" readonly>
+                    <label>Age:</label>
+                    <input type="number" value="16" readonly>
+                    <label>Aimed Course:</label>
+                    <input type="text" value="Engineering" readonly>
+                    <label>Current Class:</label>
+                    <input type="text" value="10th Grade" readonly>
+                    <button class="edit-btn">Edit Profile</button>
+                </div>
+            </section>
+
+            <!-- Contact Details -->
+            <section class="contact-section">
+                <div class="both">
+                    <div class="contact-details">
+                    <h3>Contact Details</h3>
+                        <div><i class="fa fa-phone"></i> <input type="text" value="123-456-7890" readonly></div>
+                        <div><i class="fa fa-envelope"></i> <input type="email" value="student@example.com" readonly></div>
+                        <div><i class="fa fa-linkedin"></i> <input type="text" value="linkedin.com/in/student" readonly></div>
+                    </div>
+                    <section class="academic-summary">
+                        <h3>Academic Summary</h3>
+                        <div class="graphs">
+                            <div class="graph-1">Assignments</div>
+                            <div class="graph-2">Syllabus</div>
+                            <div class="graph-3">Badge Progress</div>
+                        </div>
+                </div>
+                </section>
+            </section>
+
+            <!-- Academic Summary -->
+            
+
+            <!-- Motivational Quotes -->
+            <section class="quotes-section">
+                <h3>Motivational Quote</h3>
+                <p id="quote-display">"Success doesn't just find you. You have to go out and get it."</p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Error000. All Rights Reserved.</p>
+    </footer>
+    
+    <script>
+        
+const quotes = [
+    "Success doesn't just find you. You have to go out and get it.",
+    "Don’t stop when you’re tired. Stop when you’re done.",
+    "Dream it. Wish it. Do it.",
+    "The harder you work for something, the greater you’ll feel when you achieve it.",
+    "Dream bigger. Do bigger.",
+    "Push yourself, because no one else is going to do it for you.",
+    "Great things never come from comfort zones.",
+    "Success is not for the lazy.",
+    "Sometimes we’re tested not to show our weaknesses, but to discover our strengths.",
+    "The key to success is to focus on goals, not obstacles."
+];
+
+function displayRandomQuote() {
+    const quoteDisplay = document.getElementById('quote-display');
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    quoteDisplay.textContent = quotes[randomIndex];
+}
+
+// Change the quote every 5 seconds
+setInterval(displayRandomQuote, 5000);
+
+    </script>
+</body>
+
+</html>
