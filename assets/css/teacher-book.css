@@ -1,0 +1,148 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://raw.githubusercontent.com/devression/Login-Form/d9d0af5f2243b64fa62a6c3ad7e9161179a22bb1/background-image.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+}
+
+/* Navigation Bar Styling */
+.nav{
+    width: 100%;
+    margin: 0px 0px 0px 00px;
+    padding: 0px 0px 0px 150px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.profile{
+   padding: 0px 0px 0px 150px;
+}
+
+.navbar{
+    display: flex inline;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    flex-wrap: wrap;  
+    
+}
+
+ol{
+    padding: 7px;
+}
+li{
+    
+    list-style: none;
+    display: inline-flex;
+    padding: 0px 35px;
+    font-weight:bold;
+    transition: color 0.3s;
+}
+li:hover{
+    color: #ffffff;
+}
+
+header{
+    background-color: rgba(255, 255, 255, 0.74); 
+    text-align: center;
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 30px auto 0px;
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+    color: #000;
+}
+
+main h1 {
+    font-size: 42px;
+    color: #000e2b;
+    margin-bottom: 30px;
+}
+
+/* Table Container */
+.table-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    margin-bottom: 50px;
+}
+
+.table-title {
+    font-size: 24px;
+    color: #4A90E2;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+thead th {
+    background-color: #4A90E2;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+tbody td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+td a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #4A90E2;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+td a:hover {
+    background-color: #357ABD;
+}
+
+/* Footer */
+footer {
+    background-color: #ac72d8;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    color: #fff;
+}
+
+footer p {
+    font-size: 14px;
+}

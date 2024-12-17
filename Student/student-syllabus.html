@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus Page</title>
+    <link rel="stylesheet" href="/assets/css/student-syllabus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <span class="navbar">
+                <ol>
+                    <li><a href="/Student/student-dashboard.html">Student Dashboard</a></li>
+                    <li><a href="/Student/student-assignment.html">Assignment</a></li>
+                    <li><a href="/Student/student-book.html">Books</a></li>
+                    <li><a href="/Student/Chat.html">Chat</a></li>
+                    <li><a href="/Student/student-syllabus.html">Syllabus</a></li>
+                </ol>
+            </span>
+            <span class="profile">
+                <a href=""><span class="profile-icon"><i class="fa-solid fa-user"></i></span></a>
+            </span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Search Bar -->
+        <section class="search-section">
+            <input type="text" id="search-bar" placeholder="Search across syllabus..." onkeyup="filterTable()">
+        </section>
+
+        <!-- <button onclick="resetFilter()">Reset</button>
+
+        <select id="subject-filter" onchange="filterSubject()">
+            <option value="all">All</option>
+            <option value="physics">Physics</option>
+            <option value="chemistry">Chemistry</option>
+            <option value="biology">Biology</option>
+        </select> -->
+        
+
+        <!-- Syllabus Table -->
+        <section class="syllabus-section">
+            <h1>Syllabus Overview</h1>
+            <table id="syllabus-table">
+                <thead>
+                    <tr>
+                        <th>Chapter Name</th>
+                        <th>Status</th>
+                        <th>Revision</th>
+                        <th>Preparation Quality</th>
+                        <th>Percent Completion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Physics Section -->
+                    <tr class="section-header">
+                        <td colspan="5">Physics</td>
+                    </tr>
+                    <tr>
+                        <td>Chapter 1: Kinematics</td>
+                        <td>
+                            <select>
+                                <option value="yet-to-start" selected>Yet to Start</option>
+                                <option value="done">Done</option>
+                                <option value="going-on">Going On</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="yet-to-start" selected>Yet to Start</option>
+                                <option value="done">Done</option>
+                                <option value="going-on">Going On</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="bad">Bad</option>
+                                <option value="fine">Fine</option>
+                                <option value="good">Good</option>
+                                <option value="ask-someone">Kahi se Puch Lo</option>
+                            </select>
+                        </td>
+                        <td><input type="text" placeholder="%" maxlength="3"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Chapter 1: Kinematics</td>
+                        <td>
+                            <select>
+                                <option value="yet-to-start" selected>Yet to Start</option>
+                                <option value="done">Done</option>
+                                <option value="going-on">Going On</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="yet-to-start" selected>Yet to Start</option>
+                                <option value="done">Done</option>
+                                <option value="going-on">Going On</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="bad">Bad</option>
+                                <option value="fine">Fine</option>
+                                <option value="good">Good</option>
+                                <option value="ask-someone">Kahi se Puch Lo</option>
+                            </select>
+                        </td>
+                        <td><input type="text" placeholder="%" maxlength="3"></td>
+                    </tr>
+                    <!-- Add more rows for Physics -->
+
+                    <!-- Chemistry Section -->
+                    <tr class="section-header">
+                        <td colspan="5">Chemistry</td>
+                    </tr>
+                    <tr>
+                        <td>Chapter 1: Atomic Structure</td>
+                        <td>
+                            <select>
+                                <option value="yet-to-start" selected>Yet to Start</option>
+                                <option value="done">Done</option>
+                                <option value="going-on">Going On</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="yet-to-start" selected>Yet to Start</option>
+                                <option value="done">Done</option>
+                                <option value="going-on">Going On</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="bad">Bad</option>
+                                <option value="fine">Fine</option>
+                                <option value="good">Good</option>
+                                <option value="ask-someone">Kahi se Puch Lo</option>
+                            </select>
+                        </td>
+                        <td><input type="text" placeholder="%" maxlength="3"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Chapter 1: Atomic Structure</td>
+                        <td>
+                            <select>
+                                <option value="yet-to-start" selected>Yet to Start</option>
+                                <option value="done">Done</option>
+                                <option value="going-on">Going On</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="yet-to-start" selected>Yet to Start</option>
+                                <option value="done">Done</option>
+                                <option value="going-on">Going On</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="bad">Bad</option>
+                                <option value="fine">Fine</option>
+                                <option value="good">Good</option>
+                                <option value="ask-someone">Kahi se Puch Lo</option>
+                            </select>
+                        </td>
+                        <td><input type="text" placeholder="%" maxlength="3"></td>
+                    </tr>
+                    <!-- Add more rows for Chemistry -->
+
+                    <!-- Biology Section -->
+                    <tr class="section-header">
+                        <td colspan="5">Biology</td>
+                    </tr>
+                    <tr>
+                        <td>Chapter 1: Cell Structure</td>
+                        <td>
+                            <select>
+                                <option value="yet-to-start" selected>Yet to Start</option>
+                                <option value="done">Done</option>
+                                <option value="going-on">Going On</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="yet-to-start" selected>Yet to Start</option>
+                                <option value="done">Done</option>
+                                <option value="going-on">Going On</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="bad">Bad</option>
+                                <option value="fine">Fine</option>
+                                <option value="good">Good</option>
+                                <option value="ask-someone">Kahi se Puch Lo</option>
+                            </select>
+                        </td>
+                        <td><input type="text" placeholder="%" maxlength="3"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Chapter 1: Cell Structure</td>
+                        <td>
+                            <select>
+                                <option value="yet-to-start" selected>Yet to Start</option>
+                                <option value="done">Done</option>
+                                <option value="going-on">Going On</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="yet-to-start" selected>Yet to Start</option>
+                                <option value="done">Done</option>
+                                <option value="going-on">Going On</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="bad">Bad</option>
+                                <option value="fine">Fine</option>
+                                <option value="good">Good</option>
+                                <option value="ask-someone">Kahi se Puch Lo</option>
+                            </select>
+                        </td>
+                        <td><input type="text" placeholder="%" maxlength="3"></td>
+                    </tr>
+                    <!-- Add more rows for Biology -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Error000. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Search -->
+    <script>
+        function filterTable() {
+            const query = document.getElementById("search-bar").value.toLowerCase();
+            const rows = document.querySelectorAll("#syllabus-table tbody tr:not(.section-header)");
+            rows.forEach(row => {
+                row.style.display = row.textContent.toLowerCase().includes(query) ? "" : "none";
+            });
+        }
+
+        function resetFilter() {
+            document.getElementById("search-bar").value = "";
+            filterTable();
+        }
+    </script>
+
+    
+</body>
+
+</html>

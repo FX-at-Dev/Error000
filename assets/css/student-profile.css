@@ -1,0 +1,164 @@
+/* Body and Background styles */
+body {
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    background-image: url(https://raw.githubusercontent.com/devression/Login-Form/d9d0af5f2243b64fa62a6c3ad7e9161179a22bb1/background-image.jpeg);
+    color: #333;
+    /* display: flex; */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+    width: 15%;
+    font-size: 20px;
+    backdrop-filter: blur(2px);
+    /* background-color: rgba(38, 38, 38, 0.201); */
+    /* height: 100vh; */
+    padding: 50px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    padding-right: 0px;
+}
+a{
+    text-decoration: none;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1vh;
+}
+
+.navbar li {
+    margin: 15px 0;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #4A90E2;
+    margin-top: 50px;
+    padding-bottom: 10px; /* Adds spacing inside the bottom border */
+    transition: color 0.3s, border-color 0.3s; /* Smooth color and border transition */
+}
+
+.navbar li:hover {
+    color: #333;
+    border-color: #333; /* Changes the border color on hover */
+}
+
+/* Profile Section */
+.profile-section {
+    width: 80%;
+    padding: 50px;
+    padding-bottom: 22px;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.profile-photo{
+    display: flex;
+    flex-direction: column;
+}
+.profile-photo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #4A90E2;
+}
+
+.edit-photo-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #4A90E2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-photo-btn:hover {
+    background-color: #357ABD;
+}
+.both{
+    display: flex;
+    flex-direction: row ;
+}
+.details-section{
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.contact-section{
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    padding-left: 30vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.academic-summary{
+    margin-left: 35vh;
+    /* margin-top: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+.quotes-section {
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.details input{
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    outline: none;
+    margin-left: 10px;
+    padding: 5px;
+    color: #333;
+    font-size: 14px;
+}
+.contact-details input {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    outline: none;
+    margin-left: 10px;
+    padding: 5px;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 10px;
+    padding: 1px;
+    background-color: #ac72d8;
+    color: #fff;
+}
+
+footer p {
+    font-size: 14px;
+}
