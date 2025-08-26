@@ -11,6 +11,15 @@
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- 🔒 Login check script -->
+    <script>
+        const loggedIn = sessionStorage.getItem("isLoggedIn");
+
+        // Only allow if logged in as student
+        if (loggedIn !== "student") {
+            window.location.href = "/login.html"; // Redirect to login page
+        }
+    </script>
     <header>
         <nav class="nav">
             <span class="navbar">
@@ -37,3 +46,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
