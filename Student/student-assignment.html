@@ -11,6 +11,15 @@
   
 
     <body>
+        <!-- 🔒 Login check script -->
+    <script>
+        const loggedIn = sessionStorage.getItem("isLoggedIn");
+
+        // Only allow if logged in as student
+        if (loggedIn !== "student") {
+            window.location.href = "/login.html"; // Redirect to login page
+        }
+    </script>
         <header>
             <nav class="nav">
                 <span class="navbar">
@@ -136,4 +145,5 @@
         </footer>
         <script src="/assets/js/student assignment.js"></script>
 </body>
+
 </html>
