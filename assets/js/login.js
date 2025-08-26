@@ -11,9 +11,14 @@ loginForm.addEventListener('submit', (event) => {
 
   // Validate credentials
   if (username === 'stuadmin' && password === 'stu123') {
+    // Save login flag
+    sessionStorage.setItem("isLoggedIn", "student");
     // Redirect to Student Dashboard
     window.location.href = '/Student/student-dashboard.html';
+
   } else if (username === 'admin' && password === 'admin') {
+    // Save login flag
+    sessionStorage.setItem("isLoggedIn", "teacher");
     // Redirect to Teacher Dashboard
     window.location.href = '/Teacher/teacher-dashboard.html';
   } else {
