@@ -10,6 +10,15 @@
 </head>
 
 <body>
+    <!-- 🔒 Login check script -->
+    <script>
+        const loggedIn = sessionStorage.getItem("isLoggedIn");
+
+        // Only allow if logged in as student
+        if (loggedIn !== "student") {
+            window.location.href = "/login.html"; // Redirect to login page
+        }
+    </script>
     <header>
         <nav class="nav">
             <span class="navbar">
@@ -140,5 +149,6 @@
         <p>&copy; 2024 Error000. All Rights Reserved.</p>
     </footer>
 </body>
+
 
 </html>
