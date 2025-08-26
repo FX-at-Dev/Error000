@@ -1,211 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap');
-*{
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%; /* 1rem = 10px */
+/* Body Styling */
+body {
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    background-image: url(https://raw.githubusercontent.com/devression/Login-Form/d9d0af5f2243b64fa62a6c3ad7e9161179a22bb1/background-image.jpeg);
+    color: #333;
+    background-size: cover;
+    margin: 0vh;
+    padding: 0vh;
 }
 
-body{
-    font-family: "poppins", sans-serif;
-    font-weight: 400;
-    line-height: 1.7;
-    color: #777;
-    
-}
-
-.main-title{
-    text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 8rem;
-    text-shadow: 
-    1px 0px 1px #ccc, 0px 1px 1px #eee, 
-    2px 1px 1px #ccc, 1px 2px 1px #eee,
-    3px 2px 1px #ccc, 2px 3px 1px #eee,
-    4px 3px 1px #ccc, 3px 4px 1px #eee,
-    5px 4px 1px #ccc, 4px 5px 1px #eee,
-    6px 5px 1px #ccc, 5px 6px 1px #eee,
-    7px 6px 1px #ccc;
-}
-
-.main-title h1{
-    font-size: 7rem;
-    text-transform: uppercase;
-    font-weight: 800;
-    color: #555;
-}
-
-.main-title h2{
-    font-size: 4rem;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-
-.svg-img{
-   display: block;
-   margin: auto;
-}
-
-svg{
-    display: block;
-   margin: auto;
-}
-
-#clock{
-    animation: clockHand 5s infinite linear;
-    
-    
-    transform-box: fill-box;
-    transform-origin: bottom;
-}
-
-#leftTree, #righTree{
-    animation: tree 2s ease-in-out infinite alternate;
-    transform-box: fill-box;
-    transform-origin: bottom;
-}
-
-#man{
-    animation: manBody 1s ease-in-out infinite alternate;
-    transform-box: fill-box;
-    transform-origin: bottom;
-}
-
-#pc-circle{
-    fill: #6ace66;
-    stroke-width: 4;
-    animation: change-light 4s linear infinite alternate;
-}
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    font-weight: bolder;
+/* Navbar styling */
+.nav{
     width: 100%;
-    height: 35px;
-    line-height: 35px;
-    background-color: #f5f5f5;
-    font-size: 1.3rem;
+    margin: 0px 0px 0px 00px;
+    padding: 0px 0px 0px 150px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.profile{
+   padding: 0px 0px 0px 150px;
 }
 
-@keyframes clockHand{
-    from{
-        transform: rotateZ(0deg);
-    }
-    from{
-        transform: rotateZ(-360deg);
-    }
-}
-
-@keyframes manBody{
-    from{
-        transform: rotateX(0deg);
-    }
-    to{
-        transform: rotateX(10deg);
-    }
-}
-
-@keyframes tree{
-    from{
-        transform: rotateZ(10deg);
-    }
-    to{
-        transform: rotateZ(-20deg);
-    }
-}
-
-@keyframes change-light {
-    0% {
-        stroke: #cd61f8;
-      }
-      25% {
-        stroke: #6ace66;
-      }
-      75% {
-        stroke: #2995c0;
-      }
-      100% {
-        stroke: #e92949;
-      }
-  }
-
-  /* Media Queries */
-
-  @media (min-width: 640px){
-    .main-title h1{
-        font-size: 5rem;
-        text-transform: uppercase;
-        font-weight: 700;
-        color: #555;
-    }
+.navbar{
+    display: flex inline;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    flex-wrap: wrap;  
     
-    .main-title h2{
-        font-size: 3rem;
-        font-weight: 300;
-        text-transform: uppercase;
-    }
-    
-     
-    }
-     
-    @media (min-width: 768px){
-        .main-title h1{
-            font-size: 6rem;
-            text-transform: uppercase;
-            font-weight: 800;
-            color: #555;
-        }
-        
-        .main-title h2{
-            font-size: 4rem;
-            font-weight: 300;
-            text-transform: uppercase;
-        }
-    
-     
-    }
-     
-    @media (min-width: 1024px){
-     
-        .main-title h1{
-            font-size: 7rem;
-            text-transform: uppercase;
-            font-weight: 900;
-            color: #555;
-        }
-        
-        .main-title h2{
-            font-size: 5rem;
-            font-weight: 300;
-            text-transform: uppercase;
-        }
-     
-    }
-     
-    @media (min-width: 1200px){
-     
-        .main-title h1{
-            font-size: 8rem;
-            text-transform: uppercase;
-            font-weight: 900;
-            color: #555;
-        }
-        
-        .main-title h2{
-            font-size: 5rem;
-            font-weight: 300;
-            text-transform: uppercase;
-        }
+}
 
-        .main-title{
-            text-align: center;
-            margin-top: 4rem;
-            margin-bottom: 4rem;
-        }
-        
-     
-    }
+ol{
+    padding: 7px;
+}
+li{
+    
+    list-style: none;
+    display: inline-flex;
+    padding: 0px 35px;
+    font-weight:bold;
+    transition: color 0.3s;
+}
+li:hover{
+    color: #ffffff;
+}
+
+header{
+    background-color: rgba(255, 255, 255, 0.74); 
+    text-align: center;
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Under Construction Section */
+.construction {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.construction h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    animation: pulse 1.5s infinite;
+}
+
+.construction p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Loader Animation */
+.loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #0077cc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1.2s linear infinite;
+}
+
+/* Animations */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0%, 100% { color: #0077cc; }
+    50% { color: #ff6600; }
+}
