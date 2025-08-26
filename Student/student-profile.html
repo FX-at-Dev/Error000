@@ -11,6 +11,15 @@
 </head>
 
 <body>
+    <!-- 🔒 Login check script -->
+    <script>
+        const loggedIn = sessionStorage.getItem("isLoggedIn");
+
+        // Only allow if logged in as student
+        if (loggedIn !== "student") {
+            window.location.href = "/login.html"; // Redirect to login page
+        }
+    </script>
     <div class="container">
         <!-- Left Navigation -->
         <nav class="navbar">
@@ -116,3 +125,4 @@ setInterval(displayRandomQuote, 5000);
 </body>
 
 </html>
+
